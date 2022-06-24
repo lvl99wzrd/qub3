@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
 import axios from "axios"
 import Link from "next/link"
+import Meta from "../../components/Meta"
 
 const Collection = () => {
   const [isLoading, setIsLoading] = useState(true)
@@ -26,7 +27,8 @@ const Collection = () => {
   }, [])
 
   return (
-    <div>
+    <>
+      <Meta title="Collections" />
       {
         isLoading ?
           <p>Loading collections...</p> :
@@ -50,7 +52,7 @@ const Collection = () => {
           + New Entry
         </a>
       </Link>
-    </div>
+    </>
   )
 }
 

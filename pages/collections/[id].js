@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
 import { useRouter } from "next/router"
 import axios from "axios"
+import Meta from "../../components/Meta"
 
 const SingleCollection = () => {
   const router = useRouter()
@@ -33,6 +34,7 @@ const SingleCollection = () => {
       {
         !isLoading &&
         <>
+          <Meta title={collection.name} />
           <h1 className="text-5xl font-bold mb-6">
             { collection.name }
           </h1>
