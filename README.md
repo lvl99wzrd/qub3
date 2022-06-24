@@ -1,6 +1,6 @@
 ## Getting Started
 
-First, run the development server:
+To run the development server:
 
 ```bash
 npm run dev
@@ -8,7 +8,7 @@ npm run dev
 yarn dev
 ```
 
-First, run the database server:
+To run the database server:
 
 ```bash
 npm run server
